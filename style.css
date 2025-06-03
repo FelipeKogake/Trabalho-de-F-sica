@@ -52,33 +52,43 @@ button{
     border-radius: 5px;
 }
 
+#caminho{
+    overflow-x: scroll;
+}
+
 #retangulo{
     margin-left: 5px;
+    bottom: -45px;
+    margin: 0;
     position: relative;
-    width: 50px;
-    height: 30px;
-    background-color: black;
+    width: 5px;
 }
 
 hr{
     margin: 0;
+    width: 100%;
 }
 
 #retaNumerica{
     margin-top: 0;
     display: flex;
     gap: 10px;
-    background-color: rgb(92, 132, 92);
+    /* background-color: rgb(92, 132, 92); */
     padding: 5px;
 }
 
-#retaNumerica > p{
+#retaNumerica p {
+    width: 14px;
+}
+
+.traco{
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 10px;
     width: 5px;
     text-align: center;
+    background-color: rgb(92, 132, 92);
 }
 
 #retaNumerica > p:nth-child(even){
@@ -104,4 +114,7 @@ footer{
     bottom: 0;
     width: 99.999%;
     background-color: rgb(92, 132, 92);
+}
+
+.numero{
 }

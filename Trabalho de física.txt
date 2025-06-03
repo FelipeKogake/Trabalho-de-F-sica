@@ -1,0 +1,6 @@
+Trabalho de física
+
+Melhorias
+- tratamento de erros dos inputs
+- ajustar os tamanhos das coisas para ficar dinâmico
+- melhorar o layout
