@@ -12,126 +12,88 @@
             <h1>Simulador de cinemática</h1>
             <button onclick="openMenu()" id="buttonMenu">☰</button>
         </header>
-        
+
         <div id="content">
             <aside id="sidebar">
-                <button class="tab active" onclick="openTab(event, 'tab1')">MRU</button>
-                <button class="tab" onclick="openTab(event, 'tab2')">MRUV</button>
-            
+                <button class="tab active"
+                    onclick="openTab(event, 'tab1')">MRU</button>
+                <button class="tab"
+                    onclick="openTab(event, 'tab2')">MRUV</button>
+
             </aside>
             <main id="principal">
-                <div class="tab-content" id="tab1">
-                    <img src="../imagens/MRU.png" alt="" width="900px" style="max-width: 70%;">
-                    <br>
-                    <a href="../index/mru.html"><button id="testeButton">Fazer o teste</button></a>
-                        <div class="conteudo"> 
-                          <h1>Movimento Retilíneo Uniforme (MRU)</h1>
-                            <p>O <strong>Movimento Retilíneo Uniforme (MRU)</strong> é um dos conceitos mais fundamentais da física clássica, usado para descrever o movimento de um objeto que se desloca em uma trajetória retilínea com velocidade constante, ou seja, sem aceleração.</p>
-                            <h2>O que é o MRU?</h2>
+                <div class="tab-content" id="tab1" style="display: none;">
+                    <div class="tabs">
+                        <div>
+                            <img src="../imagens/MRU.png" alt width="700px" height="400px">
+                        </div>
+                        <div class="conteudo">
+                            <h1>Movimento Retílineo Uniforme</h1>
+                            <p>é um tipo de movimento em que um objeto se
+                                desloca em linha reta, mantendo uma velocidade
+                                constante ao longo do tempo. Isso significa que
+                                ele percorre distâncias iguais em intervalos de
+                                tempo iguais, sem acelerar nem desacelerar.</p>
+                            <h4>A fórmula principal do MRU é:</h4>
+                            <h4>S = S₀ + v·t</h4>
                             <ul>
-                                <li><strong>Movimento:</strong> mudança de posição de um objeto no espaço em relação ao tempo.</li>
-                                <li><strong>Retilíneo:</strong> o objeto se move ao longo de uma linha reta.</li>
-                                <li><strong>Uniforme:</strong> velocidade constante, sem aceleração ou desaceleração.</li>
+                                <li>S é a posição final</li>
+                                <li>S₀ é a posição inicial</li>
+                                <li>v é a velocidade constante</li>
+                                <li>t é o tempo</li>
                             </ul>
-                            <p>No MRU, o objeto percorre distâncias iguais em intervalos de tempo iguais.</p>
-                            <h2>Características principais</h2>
-                            <ol>
-                                <li><strong>Velocidade constante:</strong> não muda durante o movimento; aceleração é zero.</li>
-                                <li><strong>Trajetória reta:</strong> o movimento acontece em linha reta.</li>
-                                <li><strong>Distância proporcional ao tempo:</strong> distância percorrida é diretamente proporcional ao tempo.</li>
-                            </ol>
-                            <h2>Grandezas envolvidas</h2>
-                            <ul>
-                                <li><strong>Espaço (s):</strong> posição do objeto em determinado instante.</li>
-                                <li><strong>Tempo (t):</strong> intervalo de tempo decorrido.</li>
-                                <li><strong>Velocidade (v):</strong> taxa de variação do espaço em relação ao tempo, constante no MRU.</li>
-                            </ul>
-                            <h2>Fórmula fundamental do MRU</h2>
-                            <p>A relação entre espaço, velocidade e tempo é dada por:</p>
-                            <p style="font-size: 1.2em; font-weight: bold;">s = s<sub>0</sub> + v × t</p>
-                            <p>Onde:</p>
-                            <ul>
-                                <li><code>s</code> = posição final do objeto (em metros, por exemplo)</li>
-                                <li><code>s<sub>0</sub></code> = posição inicial do objeto</li>
-                                <li><code>v</code> = velocidade constante (m/s)</li>
-                                <li><code>t</code> = tempo decorrido (s)</li>
-                            </ul>
-                            <h2>Entendendo a fórmula</h2>
-                            <p>Se o objeto começar do ponto zero, ou seja, <code>s<sub>0</sub> = 0</code>, a fórmula simplifica para:</p>
-                            <p style="font-size: 1.2em; font-weight: bold;">s = v × t</p>
-                            <p>Mostrando que a posição do objeto aumenta linearmente com o tempo.</p>
-                            <h2>Exemplo prático</h2>
-                            <p>Imagine um carro se movendo numa estrada reta a 60 km/h. Qual a distância percorrida em 2 horas?</p>
-                            <p>Primeiro, convertemos a velocidade para metros por segundo:</p>
-                            <p><code>60 km/h = (60 × 1000) ÷ 3600 = 16,67 m/s</code></p>
-                            <p>Tempo: <code>t = 2 horas = 7200 segundos</code></p>
-                            <p>Aplicando a fórmula:</p>
-                            <p><code>s = v × t = 16,67 × 7200 = 120000 metros = 120 km</code></p>
-                            <p>Portanto, o carro percorreu 120 km em 2 horas.</p>
-                            <h2>Gráfico do MRU</h2>
-                            <p>Se representarmos o movimento num gráfico de <em>espaço x tempo</em>, teremos uma linha reta com inclinação constante.</p>
-                            <ul>
-                                <li>O eixo horizontal representa o tempo (<code>t</code>).</li>
-                                <li>O eixo vertical representa o espaço (<code>s</code>).</li>
-                            </ul>
-                            <p>A inclinação da reta é a velocidade <code>v</code>. Quanto maior a inclinação, maior a velocidade.</p>
-                            <h2>Aplicações do MRU</h2>
-                            <p>Apesar da maioria dos movimentos reais envolverem aceleração, o MRU é uma boa aproximação para:</p>
-                            <ul>
-                                <li>Objetos se movendo em velocidade constante (trens, carros, etc.)</li>
-                                <li>Estudo básico para entender movimentos mais complexos</li>
-                                <li>Base para cálculos em engenharia, trânsito, navegação e física experimental</li>
-                            </ul>
-                            <h2>Resumo rápido</h2>
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>Conceito</th>
-                                    <th>Definição</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Movimento</td>
-                                    <td>Mudança de posição no tempo</td>
-                                </tr>
-                                <tr>
-                                    <td>Retilíneo</td>
-                                    <td>Movimento em linha reta</td>
-                                </tr>
-                                <tr>
-                                    <td>Uniforme</td>
-                                    <td>Velocidade constante</td>
-                                </tr>
-                                <tr>
-                                    <td>Fórmula principal</td>
-                                    <td><code>s = s<sub>0</sub> + v × t</code></td>
-                                </tr>
-                                <tr>
-                                    <td>Velocidade</td>
-                                    <td>Constante e sem variações</td>
-                                </tr>
-                                <tr>
-                                    <td>Aceleração</td>
-                                    <td>Zero</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                      </div> -->
+                            <p>Esse tipo de movimento é bem comum em situações
+                                ideais, como um carro andando em uma estrada
+                                reta com o velocímetro parado no mesmo número,
+                                ou um trem em um trilho reto sem mudar de
+                                velocidade.</p>
+                            <p>Em resumo, no MRU, o segredo está na constância:
+                                o objeto se move sempre com a mesma velocidade e
+                                na mesma direção.</p>
+                        </div>
+                        <a href="../index/mru.html"><button
+                                id="testeButton">Fazer o teste</button></a>
+                    </div>
                 </div>
-                <div class="tab-content" id="tab2" style="display: none;">
-                    <img src="../imagens/MRUV.jpg" alt=""  width="900px"; style="max-width: 70%;">
-                    <br>
-                    <a href=""><button id="testeButton">Fazer o teste</button></a>
+                
+                <div class="tab-content" class="tabs" id="tab2"
+                    style="display: none;">
+                    
+                    <div class="tabs">
+                        <img src="../imagens/MRUV.jpg" alt  width="700px" height="400px" ;
+                            style="max-width: 70%;">
+                        <div class="conteudo">
+                            <h1>Movimento Retilíneo Uniformemente Variado</h1>
+                            <p>O MRUV é um tipo de movimento em linha reta em que a velocidade muda com o tempo, ou seja, há uma aceleração constante. Diferente do MRU, aqui o objeto acelera ou desacelera de forma regular.</p>
+                            <p>Imagine um carro começando parado e acelerando de maneira suave e constante — ele está em MRUV.</p>
+                            <h4>Fórmulas principais do MRUV:</h4>
+                            <ol>
+                                <li><h4>v = v₀ + a·t</h4></li>
+                                <ul>
+                                    <li>v = velocidade final</li>
+                                    <li>v₀ = velocidade inicial</li>
+                                    <li>a = aceleração</li>
+                                    <li>t = tempo</li>
+                                </ul>
+                                <li><h4>S = S₀ + v₀·t + ½·a·t²</h4></li>
+                                <ul>
+                                    <li>S = posição final</li>
+                                    <li>S₀ = posição inicial</li>
+                                </ul>
+                            </ol>
+                            <h3>Em resumo:</h3>
+                            <p>No MRUV, o objeto não se move com velocidade constante, mas sim com uma variação constante da velocidade. Esse tipo de movimento é muito comum na vida real, como quando andamos de bicicleta e vamos aumentando a velocidade aos poucos, ou quando freia um carro suavemente.</p>
+                        </div>
+                        <a href="./mruv.html"><button id="testeButton">Fazer o teste</button></a>
+                    </div>
                 </div>
             </main>
-            
         </div>
-        <footer>
-            &copy; Todos os direitos reservados &reg;
-        </footer>
+            </div>
+            <footer>
+                &copy; Todos os direitos reservados &reg;
+            </footer>
     </div>
-
     <script src="../JavaScript/script.js"></script>
 </body>
 </html>
